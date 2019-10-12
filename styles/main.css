@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f8f8f8;
+  }
+  /*--- navigation bar ---*/
+  
+  .home {
+    background-image: url("../lol.png");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    margin-top: -106px;
+  }
+
+section::before {
+    background: linear-gradient( #276e9e, #a3e2f1);
+    position: absolute;
+    opacity: 0.8;
+    height: 100vh;
+    width: 100vw;
+    content: "";
+}
+
+  .navbar {
+    z-index: 3;
+  }
+
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    /* color: rgb(182, 182, 182); */
+    color: #fff;
+    opacity: 0.8;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
