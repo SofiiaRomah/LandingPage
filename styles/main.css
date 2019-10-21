@@ -23,6 +23,7 @@ body {
 }
 
 .nav-link {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-right: 1em !important;
 }
 
@@ -151,6 +152,7 @@ body {
   font-weight: 400;
   font-size: 4rem;
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .row {
@@ -207,7 +209,7 @@ body {
 
 .title {
   display: block;
-  font-family: core_sans_e95_black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 44px;
   line-height: 46px;
   text-transform: uppercase;
@@ -215,7 +217,13 @@ body {
   margin-top: 50px;
 }
 
+.frame {
+  padding: 25px;
+  border: 4px dotted rgba(241, 83, 136, 0.8);
+}
+
 .about-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
   color: black;
 }
@@ -255,3 +263,134 @@ body {
 }
 
 /* Services section */
+
+#services {
+  padding-top: 1rem;
+}
+
+.services-item {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(225deg,  rgba(241, 83, 136, 0.8) 0%, rgba(91, 201, 245, 0.8) 100%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.services-title {
+  color: rgb(27, 94, 121);
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+}
+
+.services-text {
+  color: #FFFFFF;
+  text-align: left;
+}
+
+/* Clients Section */
+.carousel-caption {
+  background-color: rgba(128,128,128,0.7);
+}
+
+.carousel-caption h4 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) { 
+    .carousel-caption h4 {
+      font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-caption h4 {
+    font-size: 1.5rem;
+  }
+} 
+
+@media screen and (max-width: 992px) { 
+    .carousel-caption h4 {
+      font-size: 1.25rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) { 
+    .carousel-caption h4 {
+      font-size: 1rem;
+  }
+}
+
+/* Contact Us section */
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.inline-cols {
+    display: flex;
+    margin: 0 -15px;
+    width: calc(100% + 30px);
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 300px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+.styled-input input, .styled-input textarea {
+    padding: 20px 30px;
+}
+
+.styled-input label {
+    color: #999;
+    padding: 10px 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+textarea {
+    width: 100%;
+    min-height: 60px;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 20px;
+}
