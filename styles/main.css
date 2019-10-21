@@ -18,7 +18,7 @@ body {
 
 .nav-link,
 .navbar-brand {
-  color: #fff;
+  color: white;
   cursor: pointer;
 }
 
@@ -27,9 +27,8 @@ body {
 }
 
 .nav-link:hover {
-  background: white;
-  color: black;
-  border-radius: 10px;
+  color: whitesmoke;
+  opacity: 0.5;
 }
 
 .navbar-collapse {
@@ -150,7 +149,7 @@ body {
 
 .heading {
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -176,27 +175,83 @@ body {
   color: rgb(255, 255, 255);
 }
 
-
 @media screen and (max-width: 1200px) {
   .heading {
-    font-size: 5rem !important;
+    font-size: 4rem !important;
   }
 } 
 
 @media screen and (max-width: 992px) { 
     .heading {
-      font-size: 4rem !important;
+      font-size: 3.5rem !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .heading {
-      font-size: 3.5rem !important;
+      font-size: 3rem !important;
   }
 }
 
 @media screen and (max-width: 576px) { 
     .heading {
-      font-size: 3rem !important;
+      font-size: 2.5rem !important;
   }
 }
+
+/* About section */
+
+#about {
+  padding-top: 1rem;
+}
+
+.title {
+  display: block;
+  font-family: core_sans_e95_black;
+  font-size: 44px;
+  line-height: 46px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.about-text {
+  font-size: 20px;
+  color: black;
+}
+
+.about-item {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-counter {
+  font-size: 20px;
+  background-color: rgb(27, 94, 121);
+  border-radius: 50%;
+  position: relative;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 90px;
+  width: 90px;
+  height: 90px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.about-sub {
+  font-size: 24px;
+  color: #000000;
+  line-height: 34px;
+}
+
+.pad {
+  padding-top: 20px;
+  margin-top:20px;
+}
+
+/* Services section */
