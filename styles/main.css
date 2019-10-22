@@ -32,6 +32,10 @@ body {
   opacity: 0.5;
 }
 
+.nav-link:active {
+  border-top: white;
+}
+
 .navbar-collapse {
   justify-content: flex-end;
 }
@@ -177,6 +181,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
+
 @media screen and (max-width: 1200px) {
   .heading {
     font-size: 4rem !important;
@@ -213,8 +218,8 @@ body {
   font-size: 44px;
   line-height: 46px;
   text-transform: uppercase;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 35px;
+  margin-top: 30px;
 }
 
 .frame {
@@ -259,7 +264,9 @@ body {
 
 .pad {
   padding-top: 20px;
-  margin-top:20px;
+  margin-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /* Services section */
@@ -269,11 +276,12 @@ body {
 }
 
 .services-item {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
   background: linear-gradient(225deg,  rgba(241, 83, 136, 0.8) 0%, rgba(91, 201, 245, 0.8) 100%);
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
+  height: 200px;
 }
 
 .services-title {
@@ -288,17 +296,47 @@ body {
   text-align: left;
 }
 
+@media screen and (max-width: 768px) { 
+  .services-item {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 576px) { 
+  .services-item {
+    height: 135px !important;
+  }
+}
+
+@media screen and (max-width: 992px) { 
+  .services-item {
+    height: 225px;
+  }
+}
+
 /* Clients Section */
+#clients {
+  padding-top: 1rem;
+}
+
 .carousel-caption {
-  background-color: rgba(128,128,128,0.7);
+  background-color: rgba(241, 83, 136, 0.568);
 }
 
 .carousel-caption h4 {
   font-size: 1.5rem;
 }
 
+span.carousel-control-prev-icon {
+  background-color: rgb(27, 94, 121);
+}
+
+span.carousel-control-next-icon {
+  background-color: rgb(27, 94, 121);
+}
+
 @media screen and (max-width: 768px) { 
-    .carousel-caption h4 {
+  .carousel-caption h4 {
       font-size: 1.25rem;
   }
 }
@@ -323,74 +361,19 @@ body {
 }
 
 /* Contact Us section */
-
-.margin-center {
-    margin: 0 auto;
+#contact {
+  padding-top: 1rem;
 }
 
-.inline-cols {
-    display: flex;
-    margin: 0 -15px;
-    width: calc(100% + 30px);
+.bg-contact {
+  background-color: rgb(27, 94, 121);
 }
 
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-    font-size: 0.75em;
-    color: #999;
-    top: -5px;
-    -webkit-transition: all 0.225s ease;
-    transition: all 0.225s ease;
-}
-
-.styled-input {
-    float: left;
-    width: 300px;
-    margin: 1rem 0;
-    position: relative;
-    border-radius: 4px;
-}
-
-.styled-input input, .styled-input textarea {
-    padding: 20px 30px;
-}
-
-.styled-input label {
-    color: #999;
-    padding: 10px 30px 1rem 30px;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-    pointer-events: none;
-}
-
-.styled-input.wide { 
-    width: 650px;
-    max-width: 100%;
-}
-
-input,
-textarea {
-    padding: 30px;
-    border: 0;
-    width: 100%;
-    font-size: 1rem;
-    background-color: #2d2d2d;
-    color: white;
-    border-radius: 5px;
-}
-
-input:focus,
-textarea:focus { outline: 0; }
-
-textarea {
-    width: 100%;
-    min-height: 60px;
-}
-
-.input-container {
-    width: 650px;
-    max-width: 100%;
-    margin: 20px auto 20px;
+#contactBtn {
+  background-color: rgba(27, 94, 121, 0.8);
+  color: white;
+  margin-top: 15px;
+  border-style: solid;
+  border-width: 3px;
+  border-color:  rgb(27, 94, 121);
 }
