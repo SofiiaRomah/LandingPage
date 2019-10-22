@@ -273,6 +273,7 @@ body {
 
 #services {
   padding-top: 1rem;
+  overflow: hidden;
 }
 
 .services-item {
