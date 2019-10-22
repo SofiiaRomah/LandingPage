@@ -24,7 +24,7 @@ body {
 
 .nav-link {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-right: 1em !important;
+  margin-right: 1em;
 }
 
 .nav-link:hover {
@@ -184,25 +184,25 @@ body {
 
 @media screen and (max-width: 1200px) {
   .heading {
-    font-size: 4rem !important;
+    font-size: 4rem;
   }
 } 
 
 @media screen and (max-width: 992px) { 
     .heading {
-      font-size: 3.5rem !important;
+      font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .heading {
-      font-size: 3rem !important;
+      font-size: 3rem;
   }
 }
 
 @media screen and (max-width: 576px) { 
     .heading {
-      font-size: 2.5rem !important;
+      font-size: 2.5rem;
   }
 }
 
@@ -297,21 +297,21 @@ body {
   text-align: left;
 }
 
+@media screen and (max-width: 992px) { 
+  .services-item {
+    height: 225px;
+  }
+}
+
 @media screen and (max-width: 768px) { 
   .services-item {
-    height: 300px !important;
+    height: 300px;
   }
 }
 
 @media screen and (max-width: 576px) { 
   .services-item {
-    height: 135px !important;
-  }
-}
-
-@media screen and (max-width: 992px) { 
-  .services-item {
-    height: 225px;
+    height: 135px;
   }
 }
 
