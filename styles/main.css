@@ -378,3 +378,8 @@ span.carousel-control-next-icon {
   border-width: 3px;
   border-color:  rgb(27, 94, 121);
 }
+
+.pink-color-margins {
+  color: rgba(241, 83, 136, 0.568);
+  margin: 10px 5px;
+}
